@@ -11,7 +11,6 @@ part 'auth_state.dart';
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final LoginUseCase loginUseCase;
   final SignUpUsecase signUpUsecase;
-
   AuthBloc({
     required this.loginUseCase,
     required this.signUpUsecase,
