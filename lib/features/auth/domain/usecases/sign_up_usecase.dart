@@ -14,7 +14,6 @@ class SignUpUsecase implements UseCase<UserEntity, SignUpParams> {
     return await authRepository.signUp(params.email, params.password, params.name);
   }
 
-
 }
 
 class SignUpParams {
