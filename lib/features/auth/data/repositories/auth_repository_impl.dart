@@ -12,7 +12,7 @@ class AuthRepositoryImpl implements AuthRepository {
   final AuthRemoteDataSource authRemoteDataSource;
   final AuthLocalDataSource authLocalDataSource;
 
-  AuthRepositoryImpl(this.authRemoteDataSource, this.authLocalDataSource);
+  AuthRepositoryImpl({required this.authRemoteDataSource, required this.authLocalDataSource});
 
   @override
   Future<Either<Failures, UserEntity>> getCurrentUser() async{

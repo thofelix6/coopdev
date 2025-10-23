@@ -9,7 +9,7 @@ abstract class AuthLocalDataSource {
 class AuthLocalDataSourceImpl implements AuthLocalDataSource {
   final SharedPreferences sharedPreferences;
 
-  AuthLocalDataSourceImpl(this.sharedPreferences);
+  AuthLocalDataSourceImpl({required this.sharedPreferences});
 
   @override
   Future<void> cacheUser(String userData) async{
