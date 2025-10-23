@@ -26,7 +26,6 @@ class UserModel extends Equatable{
       email:email,
       name:name,
       token:token,
-
     );
   }
 
